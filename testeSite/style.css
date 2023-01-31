@@ -1,0 +1,194 @@
+:root {
+  --violeta-Escuro: hsl(255, 33%, 14%);
+  --cinza-Azulado: hsl(216, 30%, 68%);
+  --violeta-Muito-Escuro: hsl(270, 9%, 17%);
+  --cinza-Violeta-Escuro: hsl(275, 5%, 50%);
+  --cinza-Claro: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--violeta-Escuro);
+    border-radius: 20px;
+  }
+
+body {
+    opacity: 0.9;
+    font-family: 'DM Serif Display', serif;
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5em auto;
+    margin-right: 9.5em;
+    gap: 32em;
+}
+
+nav {
+    display: block;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 23rem;
+}
+
+.menu li {
+    display: inline;
+    gap: 5em;
+}
+
+.menu li a {
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cinza-Violeta-Escuro);
+    padding: 5px 20px;
+}
+
+.menu li a:hover {
+    color: black;
+}
+
+ul li .planosbotao {
+    border: 1px solid var(--violeta-Muito-Escuro);
+    transition: 400ms;
+    padding: 8px 30px;
+}
+
+.menu .planosbotao:hover {
+    background-color: var(--violeta-Escuro);
+    color: white;
+}
+
+/* ----- Main ----- */
+
+.fundo {
+    color: var(--cinza-Claro);
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--violeta-Escuro);
+}
+
+.caixa {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+
+.fundo::after {
+    content: '';
+    background: url(./images/bg-pattern-intro-right-desktop.svg) no-repeat;
+    position: absolute;
+    background-size: contain;
+    height: 70vh;
+    width: 30vw;
+    top: 0;
+    right: -7rem;
+}
+
+.fundo::before {
+    content: '';
+    background: url(./images/bg-pattern-intro-left-desktop.svg) no-repeat;
+    position: absolute;
+    background-size: contain;
+    height: 70vh;
+    width: 30vw;
+    bottom: -18rem;
+    left: 0;
+}
+
+.imagem {
+    background: url(./images/image-intro-desktop.jpg) no-repeat;
+    background-size: cover;
+    height: 85vh;
+    width: 70%;
+    position: relative;
+    top: 6.5rem;
+    left: 2.5rem;
+}
+
+.conteudoFundo {
+    text-align: left;
+    background: none;
+    background-color: none;
+    color: var(--cinza-Claro);
+    width: 60vw;
+}
+
+.conteudoFundo h1 + p {
+    opacity: 0.9;
+}
+
+.conteudoCaixa {
+    padding: 4.5rem 1.5rem;
+}
+
+.conteudoCaixa h1 {
+    font-size: 4.5rem;
+    margin: 1rem 0;
+    line-height: 1;
+    position: relative;
+    font-weight: normal;
+}
+
+.conteudoCaixa p {
+    font-size: 1.05rem;
+    padding: 0;
+    line-height: 2;
+    letter-spacing: 1.4px;
+    font-family: serif;
+}
+
+.btn {
+    padding: 0.7rem 1.2rem;
+    background-color: transparent;
+    color: var(--cinza-Claro);
+    border: 1px solid var(--cinza-Claro);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    transition: 400ms;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    background-color: var(--cinza-Claro);
+    color: var(--violeta-Escuro);
+}
+
+.conteudoCaixa h1::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 15%;
+    background-color: var(--cinza-Violeta-Escuro);
+    top: -2rem;
+    left: 0;
+    opacity: 0.5;
+}
+
+.conteudoCaixa h1::after {
+    width: 30%;
+    opacity: 1;
+}
