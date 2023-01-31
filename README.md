@@ -14,3 +14,14 @@
 - CSS3
 - Flexbox
 - CSS Grid
+
+### O que eu aprendi até agora...
+
+📝Reforcei alguns assuntos e dicas de todo curso de HTML5 & CSS3.</br>
+📝Consegui entender melhor algumas funcionalidades e aplicações do CSS.</br>
+📝...
+
+## O que falta ?
+
+[ ] Completar as informações do site.</br>
+[ ] Adaptar pra mobile.</br>
